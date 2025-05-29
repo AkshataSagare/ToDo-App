@@ -30,9 +30,7 @@ A minimal and user-friendly **ToDo application** built using **Flutter**, with l
 ## 📂 Folder Structure
 
 ```bash
-## 📂 Folder Structure
 
-```bash
 lib/
 ├── data/
 │   └── database.dart        # Hive-based local database logic
