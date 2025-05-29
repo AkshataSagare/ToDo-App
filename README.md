@@ -24,7 +24,7 @@ A minimal and user-friendly **ToDo application** built using **Flutter**, with l
 | ![Add Task](https://github.com/AkshataSagare/ToDo-App/blob/master/demo/add_new_task_dialog_box.png) | ![Delete Task](https://github.com/AkshataSagare/ToDo-App/blob/master/demo/delete_task.png) |
 
 | Incomplete Tasks | No Tasks | One Task Completed |
-|------------------|------------------|--------------------|
+|------------------|----------|--------------------|
 | ![Incomplete](https://github.com/AkshataSagare/ToDo-App/blob/master/demo/incomplete_tasks_homescreen.png) | ![No Tasks](https://github.com/AkshataSagare/ToDo-App/blob/master/demo/no_tasks_homescreen.png) | ![Completed](https://github.com/AkshataSagare/ToDo-App/blob/master/demo/one_complete_task_homescreen.png) |
 
 ## 📂 Folder Structure
