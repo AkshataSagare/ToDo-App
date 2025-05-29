@@ -5,11 +5,9 @@ import 'package:todo/pages/home_page.dart';
 
 void main() async{
 
-  // intialize the hives
+
   await Hive.initFlutter();
 
-  //open a box
-  var box = await Hive.openBox('Mybox');
 
 
 
@@ -19,7 +17,7 @@ void main() async{
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,7 +25,7 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
       theme:  ThemeData(
   colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-  useMaterial3: true, // Enable Material 3 styling (optional)
+  useMaterial3: true, 
 
   primaryColor: const Color.fromARGB(255, 20, 130, 209),
 
@@ -45,8 +43,8 @@ class MyApp extends StatelessWidget {
 
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      backgroundColor: const Color.fromARGB(255, 22, 100, 164),       // Button background color
-      foregroundColor: const Color.fromARGB(255, 255, 255, 255),      // Text/Icon color
+      backgroundColor: const Color.fromARGB(255, 22, 100, 164),       
+      foregroundColor: const Color.fromARGB(255, 255, 255, 255),      
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
       textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
       shape: RoundedRectangleBorder(
@@ -56,8 +54,8 @@ class MyApp extends StatelessWidget {
   ),
 
   checkboxTheme: CheckboxThemeData(
-    fillColor: MaterialStateProperty.all(Colors.blue),
-    checkColor: MaterialStateProperty.all(Colors.white),
+    fillColor: WidgetStateProperty.all(Colors.blue),
+    checkColor: WidgetStateProperty.all(Colors.white),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
   ),
 

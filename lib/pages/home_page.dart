@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/adapters.dart';
 import 'package:todo/data/database.dart';
 import 'package:todo/util/dialog_box.dart';
 import 'package:todo/util/todo_tile.dart';
@@ -12,10 +11,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  //reference the hive box
-  // final _myBox = Hive.box('Mybox');
 
-  //text controller
+
+  
   final _controller = TextEditingController();
   ToDoDataBase db = ToDoDataBase();
 
@@ -27,7 +25,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
   }
 
-  //chackbox was tapped
+  
   void checkBoxChanged(bool? value, int index) {
     setState(() {
       db.toDoList[index][1] = !db.toDoList[index][1];
@@ -35,7 +33,7 @@ class _HomePageState extends State<HomePage> {
     db.updateData();
   }
 
-  //save a new task
+  
   void saveNewTask() {
     setState(() {
       db.toDoList.add([_controller.text, false]);
@@ -45,7 +43,7 @@ class _HomePageState extends State<HomePage> {
     Navigator.of(context).pop();
   }
 
-  //create new task
+  
   void createNewTask() {
     showDialog(
       context: context,
@@ -59,7 +57,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  //delete task
+  
   void deleteTask(int index) {
     setState(() {
       db.toDoList.removeAt(index);
@@ -81,7 +79,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         backgroundColor: Color.fromARGB(255, 20, 130, 209),
-        centerTitle: true, //Centers the title
+        centerTitle: true, 
         elevation: 0,
       ),
 
